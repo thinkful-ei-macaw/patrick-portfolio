@@ -54,21 +54,18 @@ footer {
 }
 
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   text-align: left;
-  padding-left: 150px;
-  padding-right: 150px;
   display: flex;
   justify-content: space-between;
 }
 
 header {
   padding: 8% 0;
-  height: 730px;
+  height: 550px;
   width: 100%;
   background-color: #1b2942;
   display: flex;
@@ -80,11 +77,12 @@ h1 {
   font-family: "Montserrat";
 }
 
-h2 {
+h3 {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h3 {
+h2 {
   font-family: "Montserrat";
 }
 
@@ -92,10 +90,15 @@ section {
   min-height: 200px;
   padding: 6% 0;
   background-color: #345080;
-  height: 730px;
+  height: 550px;
   line-height: 1.5;
-  padding-left: 100px;
-  padding-right: 100px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
@@ -107,15 +110,85 @@ p {
   font-family: "Hind";
 }
 
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px;
+}
+
+img {
+  width: auto;
+  max-height: 400px;
+}
+
 section:nth-child(even) {
   background-color: #5e90e6;
 }
 
 @media (min-width: 320px) {
+  header,
+  section {
+    height: 950px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eyeball {
+    padding-top: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  section {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img {
+    width: auto;
+    max-height: 200px;
+  }
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 700px) {
+  section {
+    font-size: 24px;
+  }
+  img {
+    width: auto;
+    max-height: 300px;
+  }
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
+  section,
+  header {
+    height: 730px;
+  }
+  nav {
+    position: fixed;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
