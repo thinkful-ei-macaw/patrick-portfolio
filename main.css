@@ -38,7 +38,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 15px solid #333;
+  border: 15px solid #1c52b0;
 }
 
 nav,
@@ -126,7 +126,7 @@ img {
 }
 
 section:nth-child(even) {
-  background-color: #5e90e6;
+  background-color: #1c52b0;
 }
 
 h2 {
