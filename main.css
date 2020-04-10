@@ -8,13 +8,12 @@ body {
   color: whitesmoke;
   text-align: center;
   line-height: 1.5;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0px;
 }
 
 .eyeball {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
@@ -58,14 +57,19 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  text-align: left;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  padding: 15px;
+  flex-direction: column;
+  background-color: ;
+}
+
+.title {
+  font-size: 18px;
 }
 
 header {
   padding: 8% 0;
-  height: 550px;
   width: 100%;
   background-color: #1b2942;
   display: flex;
@@ -90,7 +94,7 @@ section {
   min-height: 200px;
   padding: 6% 0;
   background-color: #345080;
-  height: 550px;
+  height: 600px;
   line-height: 1.5;
   text-align: left;
   font-size: 24px;
@@ -125,42 +129,31 @@ section:nth-child(even) {
   background-color: #5e90e6;
 }
 
-@media (min-width: 320px) {
-  header,
-  section {
-    height: 950px;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .eyeball {
-    padding-top: 80px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-  section {
-    font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  img {
-    width: auto;
-    max-height: 200px;
-  }
-  p {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0;
-  }
+h2 {
+  font-size: 20px;
+}
+section {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+img {
+  width: auto;
+  max-height: 200px;
+}
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
+  header {
+    height: 950px;
+  }
   section {
-    font-size: 24px;
+    height: 1050px;
+    font-size: 32px;
   }
   img {
     width: auto;
@@ -173,12 +166,24 @@ section:nth-child(even) {
   }
 }
 
-@media (min-width: 1080px) {
-  section,
+@media screen and (min-width: 1000px) {
+  h1 {
+    padding-top: 300px;
+    font-size: 80px;
+  }
   header {
-    height: 730px;
+    height: 1500px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 60px;
   }
   nav {
+    font-size: 80px;
     position: fixed;
     padding-left: 150px;
     padding-right: 150px;
@@ -188,7 +193,30 @@ section:nth-child(even) {
     padding-right: 200px;
   }
   section {
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 1500px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  h1 {
+    padding: 0px;
+  }
+
+  header {
+    height: 1000px;
+  }
+
+  section {
+    font-size: 24px;
+    height: 750px;
   }
 }
