@@ -90,17 +90,28 @@ h2 {
   font-family: "Montserrat";
 }
 
-section {
+#section {
   min-height: 200px;
   padding: 6% 0;
   background-color: #345080;
-  height: 600px;
+  height: 1000px;
   line-height: 1.5;
   text-align: left;
   font-size: 24px;
 }
 
-.projects {
+#projects {
+  padding: 6% 0;
+  background-color: #345080;
+
+  line-height: 1.5;
+  text-align: left;
+  font-size: 24px;
+}
+
+.project1,
+.project2,
+.project3 {
   display: flex;
   justify-content: space-between;
 }
@@ -151,7 +162,7 @@ p {
   header {
     height: 950px;
   }
-  section {
+  #section {
     height: 1050px;
     font-size: 32px;
   }
@@ -192,7 +203,7 @@ p {
     padding-left: 200px;
     padding-right: 200px;
   }
-  section {
+  #section {
     height: 1500px;
     font-size: 38px;
   }
@@ -215,7 +226,7 @@ p {
     height: 1000px;
   }
 
-  section {
+  #section {
     font-size: 24px;
     height: 750px;
   }
